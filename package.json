@@ -1,5 +1,5 @@
 {
-  "name": "waiting-list",
+  "name": "waiting-list-node-react-mysql",
   "version": "1.0.0",
   "description": "",
   "type": "module",
@@ -22,7 +22,7 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0",
-    "nodemon": "^2.0.22"
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
   }
 }

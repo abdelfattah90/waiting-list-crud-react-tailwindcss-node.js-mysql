@@ -46,13 +46,13 @@ function Home() {
 
   return (
     <>
-      <div className='p-2'>
+      <div className='container p-2'>
         <p className='text-2xl text-center p-1 text-teal-500'>Waiting list</p>
         <p className='text-1xl text-center text-slate-600'>
           CRUD Application React vite, Tailwindcss, Node.js and MySQL
         </p>
 
-        <div className='container p-5 mx-auto'>
+        <div className='p-5 mx-auto'>
           <Link
             to='/add-client'
             className='bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded'
@@ -61,8 +61,8 @@ function Home() {
           </Link>
         </div>
 
-        <div className='container mx-auto p-5'>
-          <table className='min-w-full bg-white border border-gray-300'>
+        <div className='relative overflow-x-auto shadow-md sm:rounded-lg '>
+          <table className='w-full bg-white border border-gray-300'>
             <thead className='text-left'>
               <tr className='bg-gray-100'>
                 <th className='py-2 px-4 border-b'>Name</th>

@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Home from './pages/Home'
 import Add from './pages/Add'
 import Update from './pages/Update'
@@ -17,5 +16,4 @@ function App() {
     </>
   )
 }
-
 export default App

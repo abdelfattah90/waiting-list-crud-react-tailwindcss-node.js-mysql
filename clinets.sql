@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 09, 2023 at 01:42 PM
+-- Generation Time: Sep 05, 2023 at 03:59 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- PHP Version: 8.0.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,8 @@ CREATE TABLE `clinets` (
 
 INSERT INTO `clinets` (`id`, `clinetname`, `clinetid`, `priority`, `created_at`) VALUES
 (1, 'Ahmed', 'R5174', 'Normal', '2023-07-09 11:42:32'),
-(2, 'Ali', 'H1740', 'Quick', '2023-07-09 11:42:40');
+(2, 'Ali', 'H1740', 'Quick', '2023-07-09 11:42:40'),
+(3, 'Amr', 'J4711', 'Normal', '2023-09-05 13:20:44');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `clinets`
 -- AUTO_INCREMENT for table `clinets`
 --
 ALTER TABLE `clinets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

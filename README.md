@@ -1,6 +1,6 @@
 ## Waiting list
 
-# CRUD Application React, Node.js and MySQL
+# CRUD Application React Tailwindcss, Node.js and MySQL
 
 ### Install dependencies
 
