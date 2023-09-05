@@ -2,6 +2,8 @@
 
 # CRUD Application React Tailwindcss, Node.js and MySQL
 
+- Database name: waiting-list-db
+- Bug in Table name clients Not clinets. 
 ### Install dependencies
 
 ```
