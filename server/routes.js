@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 // Get Clients
 router.get('/clients', (req, res) => {
-  const queryDB = 'SELECT * FROM clinets'
+  const queryDB = 'SELECT * FROM clients'
   db.query(queryDB, (err, data) => {
     if (err) {
       console.log(err)
@@ -30,11 +30,11 @@ router.get('/clients', (req, res) => {
 // Add Client
 router.post('/clients', (req, res) => {
   const queryDB =
-    'INSERT INTO clinets(`clinetname`, `clinetid`, `priority`, `created_at`) VALUES (?)'
+    'INSERT INTO clients(`clientname`, `clientid`, `priority`, `created_at`) VALUES (?)'
 
   const values = [
-    req.body.clinetname,
-    req.body.clinetid,
+    req.body.clientname,
+    req.body.clientid,
     req.body.priority,
     req.body.created_at,
   ]
@@ -48,9 +48,9 @@ router.post('/clients', (req, res) => {
 // Update Client
 router.put('/clients/:clientid', (req, res) => {
   const clientId = req.params.clientid
-  const queryDB = 'UPDATE clinets SET `clinetname`= ? WHERE clinetid = ?'
+  const queryDB = 'UPDATE clients SET `clientname`= ? WHERE clientid = ?'
 
-  const values = [req.body.clinetname]
+  const values = [req.body.clientname]
 
   db.query(queryDB, [...values, clientId], (err, data) => {
     if (err) return res.send(err)
@@ -61,7 +61,7 @@ router.put('/clients/:clientid', (req, res) => {
 // Delete Client
 router.delete('/clients/:id', (req, res) => {
   const clientId = req.params.id
-  const queryDB = ' DELETE FROM clinets WHERE id = ? '
+  const queryDB = ' DELETE FROM clients WHERE id = ? '
 
   db.query(queryDB, [clientId], (err, data) => {
     if (err) return res.send(err)

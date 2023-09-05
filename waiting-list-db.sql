@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2023 at 03:59 PM
+-- Generation Time: Sep 06, 2023 at 12:14 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -24,22 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `clinets`
+-- Table structure for table `clients`
 --
 
-CREATE TABLE `clinets` (
+CREATE TABLE `clients` (
   `id` int(11) NOT NULL,
-  `clinetname` varchar(255) DEFAULT NULL,
-  `clinetid` varchar(255) DEFAULT NULL,
+  `clientname` varchar(255) DEFAULT NULL,
+  `clientid` varchar(255) DEFAULT NULL,
   `priority` varchar(45) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `clinets`
+-- Dumping data for table `clients`
 --
 
-INSERT INTO `clinets` (`id`, `clinetname`, `clinetid`, `priority`, `created_at`) VALUES
+INSERT INTO `clients` (`id`, `clientname`, `clientid`, `priority`, `created_at`) VALUES
 (1, 'Ahmed', 'R5174', 'Normal', '2023-07-09 11:42:32'),
 (2, 'Ali', 'H1740', 'Quick', '2023-07-09 11:42:40'),
 (3, 'Amr', 'J4711', 'Normal', '2023-09-05 13:20:44');
@@ -49,9 +49,9 @@ INSERT INTO `clinets` (`id`, `clinetname`, `clinetid`, `priority`, `created_at`)
 --
 
 --
--- Indexes for table `clinets`
+-- Indexes for table `clients`
 --
-ALTER TABLE `clinets`
+ALTER TABLE `clients`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -59,9 +59,9 @@ ALTER TABLE `clinets`
 --
 
 --
--- AUTO_INCREMENT for table `clinets`
+-- AUTO_INCREMENT for table `clients`
 --
-ALTER TABLE `clinets`
+ALTER TABLE `clients`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 

@@ -12,8 +12,8 @@ function Add() {
   const randomId = generateRandomId()
 
   const [client, setClient] = useState({
-    clinetname: '',
-    clinetid: randomId.toString(),
+    clientname: '',
+    clientid: randomId.toString(),
     priority: 'Normal',
   })
 
@@ -53,8 +53,8 @@ function Add() {
             <div className='mb-4'>
               <input
                 type='text'
-                placeholder='Clinet name'
-                name='clinetname'
+                placeholder='Client name'
+                name='clientname'
                 onChange={handleChange}
                 className='appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-teal-500'
               />

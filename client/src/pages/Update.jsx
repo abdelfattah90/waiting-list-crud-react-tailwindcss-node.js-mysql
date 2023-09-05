@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Update = () => {
   const [clientUpdate, setClientUpdate] = useState({
-    clinetname: '',
+    clientname: '',
   })
 
   const [error, setError] = useState(false)
@@ -47,8 +47,8 @@ const Update = () => {
             <div className='mb-4'>
               <input
                 type='text'
-                placeholder='Clinet name'
-                name='clinetname'
+                placeholder='Client name'
+                name='clientname'
                 onChange={handleChange}
                 className='appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-teal-500'
               />

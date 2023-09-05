@@ -57,7 +57,7 @@ function Home() {
             to='/add-client'
             className='bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded'
           >
-            Add clinet
+            Add client
           </Link>
         </div>
 
@@ -66,7 +66,7 @@ function Home() {
             <thead className='text-left'>
               <tr className='bg-gray-100'>
                 <th className='py-2 px-4 border-b'>Name</th>
-                <th className='py-2 px-4 border-b'>Clinet ID</th>
+                <th className='py-2 px-4 border-b'>Client ID</th>
                 <th className='py-2 px-4 border-b'>Priority</th>
                 <th className='py-2 px-4 border-b'>Date</th>
                 <th className='py-2 px-4 border-b'>Time</th>
@@ -76,8 +76,8 @@ function Home() {
             <tbody>
               {clients.map((client) => (
                 <tr key={client.id}>
-                  <td className='py-2 px-4 border-b'>{client.clinetname}</td>
-                  <td className='py-2 px-4 border-b'>{client.clinetid}</td>
+                  <td className='py-2 px-4 border-b'>{client.clientname}</td>
+                  <td className='py-2 px-4 border-b'>{client.clientid}</td>
                   <td
                     className={`py-2 px-4 border-b ${
                       client.priority == 'Quick' ? 'text-red-500' : ''
@@ -105,7 +105,7 @@ function Home() {
                     </button>
 
                     <button className='update'>
-                      <Link to={`/update/${client.clinetid}`}>
+                      <Link to={`/update/${client.clientid}`}>
                         <FaEdit
                           style={{ color: '#78b550', display: 'inline-block' }}
                         />
